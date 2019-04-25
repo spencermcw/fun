@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Source+Code+Pro");
+body {
+  font-family: "Crimson Text", serif; }
+
+.counter {
+  display: block;
+  height: 500px;
+  background-color: #ccc;
+  display: flex; }
+  .counter__player {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 15rem;
+    height: 100%;
+    z-index: 0; }
+    .counter__player--1 {
+      background-color: salmon; }
+    .counter__player--2 {
+      background-color: darkgray; }
+  .counter__life {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Source Code Pro", sans-serif;
+    z-index: 2;
+    pointer-events: none; }
+  .counter__button {
+    border: none;
+    background-color: #ddd;
+    width: 85%;
+    flex: 1;
+    margin: 5px;
+    font-size: 3rem;
+    border-radius: 10px;
+    color: white;
+    opacity: .4;
+    z-index: 1; }
+    .counter__button:hover {
+      cursor: pointer; }
